@@ -27,7 +27,7 @@ header {
 }
 
 header img {
-  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
   margin: 0 auto;
   display: block;
 }
@@ -102,13 +102,69 @@ main {
   justify-content: space-between;
 }
 
-#album-image-collection img {
+#album-section-01 {
+  background-image: url("../images/album01.png");
+  color: #000;
+}
+
+#album-section-02 {
+  background-image: url("../images/album02.png");
+  color: #fff;
+}
+
+#album-section-03 {
+  background-image: url("../images/album03.png");
+  color: #000;
+}
+
+#album-section-04 {
+  background-image: url("../images/album04.png");
+  color: #fff;
+}
+
+#album-section-05 {
+  background-image: url("../images/album05.png");
+  color: #fff;
+}
+
+#album-section-06 {
+  background-image: url("../images/album06.png");
+  color: #fff;
+}
+
+#album-section-07 {
+  background-image: url("../images/album07.jpeg");
+  color: #fff;
+}
+
+#album-section-08 {
+  background-image: url("../images/album08.jpeg");
+  color: #000;
+}
+
+#album-section-center {
+  background-image: url("../images/membercover.jpg");
+  color: gray;
+}
+
+.album-section {
+  display: block;
   width: 30%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position: center center;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  opacity: 0.8;
+  transition: ease-in-out 500ms;
+}
+
+.album-section:hover {
+  opacity: 1;
+  width: 33%;
 }
 
 #headup {
