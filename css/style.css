@@ -27,9 +27,14 @@ header {
 }
 
 header img {
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+  filter: invert(100%);
   margin: 0 auto;
   display: block;
+  transition: ease-in-out 0.3s;
+}
+
+header img:hover {
+  filter: invert(70%);
 }
 
 nav {
@@ -41,7 +46,7 @@ nav a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.5s;
+  transition: ease-in-out 0.3s;
 }
 
 nav a:hover {
@@ -70,12 +75,15 @@ main {
   border: 1px solid #ccc;
 }
 
+.year-span {
+  font-weight: bold;
+}
+
 .iframely-embed {
   width: 70%;
   height: auto;
-  margin: 0 auto;
   display: block;
-  border: gray 4px solid;
+  border: gray 2px solid;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -167,13 +175,24 @@ main {
   width: 33%;
 }
 
-#headup {
+#headup,
+#credits {
   width: 70%;
   margin: 0 auto;
   padding: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: left;
+}
+
+#credits {
+  font-size: small;
+}
+
+#credits a {
+  color: #fff;
+  font-size: small;
+  text-decoration: underline;
 }
 
 footer {
